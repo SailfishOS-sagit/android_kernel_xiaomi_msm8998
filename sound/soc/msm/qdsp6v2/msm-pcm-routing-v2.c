@@ -48,7 +48,7 @@
 #include "sound/q6lsm.h"
 #include <linux/delay.h>
 
-#ifdef CONFIG_MACH_XIAOMI_MSM8998
+#ifdef CONFIG_MACH_CHIRON
 #include "msm-elliptic.h"
 #endif
 
@@ -16430,7 +16430,7 @@ static int msm_routing_probe(struct snd_soc_platform *platform)
 	snd_soc_add_platform_controls(platform, stereo_channel_reverse_control,
 				ARRAY_SIZE(stereo_channel_reverse_control));
 
-#ifdef CONFIG_MACH_XIAOMI_MSM8998
+#ifdef CONFIG_MACH_CHIRON
 	elliptic_add_platform_controls(platform);
 #endif
 
